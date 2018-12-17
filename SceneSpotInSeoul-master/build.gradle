@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // Sdk and tools
+        compileSdkVersion = 28
+        minSdkVersion = 23
+        targetSdkVersion = 28
+        buildToolsVersion = '28.0.2'
+
+        // App dependencies
+        kotlinVersion = '1.2.70'
+        supportLibraryVersion = '28.0.0-rc02'
+        constraintLayoutVersion = '1.1.2'
+        debugDbVersion = '1.0.4'
+        roomVersion = '1.1.1'
+        workVersion = '1.0.0-alpha08'
+        lifecycleVersion = '1.1.1'
+        gradleVersion = '3.1.4'
+        retrofitVersion = '2.4.0'
+        glideVersion = '4.7.1'
+        gsonVersion = '2.8.5'
+        junitVersion = '4.12'
+        runnerVersion = '1.0.2'
+        espressoVersion = '3.0.2'
+        ktlintVersion = '0.24.0'
+    }
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradleVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id "com.diffplug.gradle.spotless" version "3.14.0"
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+subprojects {
+    apply plugin: 'com.diffplug.gradle.spotless'
+    spotless {
+        kotlin {
+            target '**/*.kt'
+            ktlint(ktlintVersion)
+        }
+    }
+}

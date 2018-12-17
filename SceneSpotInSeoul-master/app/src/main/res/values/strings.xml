@@ -1,0 +1,18 @@
+<resources>
+  <string name="app_name">SceneSpotInSeoul</string>
+  <string name="title_home">Home</string>
+  <string name="title_map">Map</string>
+  <string name="title_gallery">Gallery</string>
+  <string name="category_media">Media</string>
+  <string name="category_scene">Scene</string>
+  <string name="category_location">Location</string>
+  <string name="category_media_scenes">Best Scenes</string>
+  <string name="category_media_locations">Locations</string>
+  <string name="category_location_scenes">Best Scenes</string>
+  <string name="category_location_media">Media</string>
+  <string name="no_results">No results</string>
+  <string name="no_pictures">No pictures</string>
+  <string name="hint_search">Search</string>
+  <string name="sync_failed_when_first">Data sync failed, Check your network and re-run</string>
+  <string name="action_map_launch">Launch external map app</string>
+</resources>

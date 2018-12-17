@@ -1,0 +1,12 @@
+<resources>
+  <dimen name="key_line_mini">4dp</dimen>
+  <dimen name="key_line_small">8dp</dimen>
+  <dimen name="key_line_normal">16dp</dimen>
+  <dimen name="list_category_height">176dp</dimen>
+  <dimen name="list_category_text_height">32dp</dimen>
+  <dimen name="list_media_width">112dp</dimen>
+  <dimen name="list_media_height">144dp</dimen>
+  <dimen name="search_collapse_height">48dp</dimen>
+  <dimen name="search_content_margin">72dp</dimen>
+  <dimen name="search_result_margin">72dp</dimen>
+</resources>

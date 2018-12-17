@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#FAFAFA</color>
+  <color name="colorPrimaryLight">#FFFFFF</color>
+  <color name="colorPrimaryDark">#C7C7C7</color>
+  <color name="colorAccent">#d50000</color>
+  <color name="colorAccentLight">#ff5131</color>
+  <color name="colorAccentDark">#9b0000</color>
+  <color name="colorPicturePrimary">#000000</color>
+  <color name="colorPicturePrimaryDark">#000000</color>
+  <color name="colorOnPrimary">#000000</color>
+  <color name="colorOnPrimaryDisable">#78000000</color>
+  <color name="colorOnSecondary">#FFFFFF</color>
+  <color name="imageOverlayTextBackground">#87000000</color>
+  <color name="textSubHeader">#000000</color>
+  <color name="activeFocusedIcon">#87000000</color>
+  <color name="activeUnfocusedIcon">#54000000</color>
+  <color name="inactiveIcon">#38000000</color>
+  <color name="dividerOnWhite">#12000000</color>
+  <color name="title_text">#000000</color>
+  <color name="body_text">#87000000</color>
+  <color name="picture_description_background">#38000000</color>
+  <color name="transparent_toolbar">#38000000</color>
+  <color name="shadow">#38000000</color>
+  <color name="current_location">#2979FF</color>
+  <color name="current_location_selected">#2962FF</color>
+</resources>

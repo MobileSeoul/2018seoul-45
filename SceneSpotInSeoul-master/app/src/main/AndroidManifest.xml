@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.threes.scenespotinseoul">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="androdi.permission.CAMERA" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".ui.splash.SplashActivity"
+			android:theme="@style/AppTheme.Splash">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ui.search.SearchActivity" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:label="@string/app_name" android:name=".MainActivity" />
+		<activity android:name=".ui.location.LocationDetailActivity" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:name=".ui.media.MediaDetailActivity" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:name=".ui.scene.SceneDetailActivity" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:name=".ui.scene.DetailToMapActivity"/>
+		<activity android:name=".ui.scene.PictureActivity" android:theme="@style/AppTheme.Picture"/>
+		<provider
+			android:name="android.support.v4.content.FileProvider"
+			android:authorities="com.threes.scenespotinseoul"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/file_paths" />
+		</provider>
+	</application>
+</manifest>

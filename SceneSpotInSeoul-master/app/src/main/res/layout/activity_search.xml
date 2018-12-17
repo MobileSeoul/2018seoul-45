@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.threes.scenespotinseoul.ui.search.widget.PersistentSearchView
+    android:id="@+id/search_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/key_line_small"
+    android:layout_marginLeft="@dimen/key_line_small"
+    android:layout_marginRight="@dimen/key_line_small"
+    app:layout_constraintTop_toTopOf="parent"
+    app:iconMode="back" />
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/list_search_result"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/search_result_margin"
+    android:layout_marginLeft="@dimen/key_line_normal"
+    android:layout_marginRight="@dimen/key_line_normal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

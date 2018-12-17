@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.scene.SceneDetailActivity">
+
+  <ImageView
+    android:id="@+id/media_image"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@android:color/darker_gray"
+    app:layout_constraintBottom_toTopOf="@id/picture"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <ImageView
+    android:id="@+id/picture"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="#D3D3D3"
+    android:foreground="?attr/selectableItemBackground"
+    app:layout_constraintBottom_toTopOf="@id/bottom_view"
+    app:layout_constraintTop_toBottomOf="@id/media_image"/>
+
+  <TextView
+    android:id="@+id/guide"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/key_line_small"
+    android:drawablePadding="@dimen/key_line_small"
+    android:drawableTint="@color/activeUnfocusedIcon"
+    android:drawableTop="@drawable/layer_ic_add_photo"
+    android:text="이 부분을 누르면 사진을 추가할 수 있습니다"
+    app:layout_constraintBottom_toBottomOf="@id/picture"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/picture"/>
+
+  <View
+    android:id="@+id/bottom_view"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@android:color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="@id/Scenename"/>
+
+  <TextView
+    android:id="@+id/Scenename"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/key_line_small"
+    android:layout_marginStart="@dimen/key_line_normal"
+    android:layout_marginEnd="@dimen/key_line_normal"
+    android:paddingTop="24dp"
+    android:textColor="@android:color/black"
+    android:textSize="30sp"
+    app:layout_constraintBottom_toTopOf="@+id/tagView"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/fab"
+    tools:text="박명수 딱따구리"/>
+
+  <TextView
+    android:id="@+id/tagView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:layout_marginStart="@dimen/key_line_normal"
+    android:layout_marginEnd="@dimen/key_line_normal"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+    android:textColor="@color/colorAccent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/fab"
+    tools:text="#유재석 #하하"/>
+
+  <android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/key_line_normal"
+    android:src="@drawable/ic_map_selected"
+    android:tint="@android:color/white"
+    app:fabSize="normal"
+    app:layout_constraintBottom_toTopOf="@id/bottom_view"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/bottom_view"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/shadow_bg"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <ImageButton
+    android:id="@+id/btn_navigate_up"
+    android:layout_width="?attr/actionBarSize"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/transparent"
+    android:foreground="?selectableItemBackgroundBorderless"
+    android:src="@drawable/ic_round_arrow_back"
+    android:tint="@android:color/white"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="ContentDescription"/>
+
+</android.support.constraint.ConstraintLayout>
